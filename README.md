@@ -1,6 +1,6 @@
 
 
-# lens-pizzaria
+# LENS PIZZARIA
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=brown&style=for-the-badge)
 
