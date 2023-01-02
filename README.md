@@ -38,3 +38,22 @@ npm run serve
 ```
 npm run build
 ```
+<hr>
+<br>
+
+## ✔️ Tecnologias utilizadas
+
+- ``Vue JS``
+- ``Javascript``
+- ``Bootstrap``
+- ``HTML e CSS3``
+
+
+<hr>
+<br>
+
+## 💻 Desenvolvedores
+
+| [<img src="https://avatars.githubusercontent.com/u/105603692?v=4" width=135><br><sub>Victor Brandão</sub>](https://github.com/Vbrand01) | |
+| :---: | :---: 
+
