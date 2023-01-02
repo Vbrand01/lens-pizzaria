@@ -4,7 +4,6 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=brown&style=for-the-badge)
 
-![Logo_de_Hamburgueria_Artesanal-removebg-preview](https://user-images.githubusercontent.com/105603692/210268764-2958a141-38ef-4ffa-92a8-5ee3d1d4082b.png)
 ![Logo de Hamburgueria Artesanal](https://user-images.githubusercontent.com/105603692/210268808-248733a8-581e-45b3-8d84-085c24c7cede.png)
 
 * [Base de pesquisa](https://github.com/Vbrand01/lens-pizzaria/edit/main/README.md)
