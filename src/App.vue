@@ -38,11 +38,10 @@
     font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
 
   .main-container{
-    margin: 100px;
     min-height: 250px;
   }
 

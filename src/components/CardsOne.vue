@@ -55,6 +55,13 @@ h1 {
     font-weight: 700;
 }
 
+.col-sm-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
 .card {
   width: 100%;
   height: 100%;
@@ -113,12 +120,13 @@ h1 {
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 908px){
     .card {
     width: 400px;
     height: 100%;
     padding: 20px;
     transition: all 0.2s;
+    margin-top: 20px;
     position: relative;
     cursor: pointer;
     border: none;
@@ -126,6 +134,13 @@ h1 {
         -webkit-box-shadow: rgba(0, 0, 0, 0.582) 2px -4px 28px -11px;
         -moz-box-shadow: rgba(0, 0, 0, 0.616) 2px -4px 28px -11px;
 }
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: 0px;
+  animation-name: move-down1;
+}
+
 }
 
 </style>

@@ -12,7 +12,7 @@ export default{
 
 <style scoped>
     #footer{
-        height: 200px;
+        height: 100px;
         background-color: rgb(105, 10, 7);
         border-top: 4px solid rgb(255, 38, 0);
         color: rgb(255, 187, 0);

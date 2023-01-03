@@ -10,13 +10,15 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis fuga temporibus error odio
                         sunt! Voluptates asperiores consectetur cumque, impedit distinctio, ad officiis perspiciatis
                         vitae harum aperiam odio veniam quae sequi.</p>
+                <div class="alinhando-button">
                     <button class="cta">
-                        <span>Gostaria de fazer um pedido</span>
+                        <span>Fazer um pedido</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                             <path d="M1,5 L11,5"></path>
                             <polyline points="8 1 12 5 8 9"></polyline>
                         </svg>
                     </button>
+                </div>
                 </div>
                 <div class="col-sm-4">
                     <img class="img3d" src="../../public/img/3d.png" alt="">
@@ -37,13 +39,17 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Kaushan+Script&family=Luckiest+Guy&family=Monoton&family=Russo+One&family=VT323&display=swap');
 
 #main-banner {
-    background-image: url('../../public/img/pizzahome.png');
-    background-position: 0 -250px;
+    background-image: url('../../public/img/pizzahome5.png');
+    /* background-position: 0 -250px; */
     background-size: cover;
-    height: 700px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
 }
 
 #bloco1 {
@@ -57,7 +63,6 @@ export default {
     padding: 40px;
     border-radius: 20px;
     height: 100%;
-    margin-top: 40px;
 }
 
 #bloco1 h1 {
@@ -73,8 +78,15 @@ export default {
 
 }
 
+.alinhando-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .img3d {
-    margin-left: 100px;
+    margin-top: 10px;
+    width: 100%;
 }
 
 
@@ -92,6 +104,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .cta:before {
@@ -141,4 +154,23 @@ export default {
 .cta:active {
     transform: scale(0.95);
 }
+
+@media (max-width: 768px){
+    .img3d {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.cta span {
+    flex-basis: 100%
+}
+
+}
+
+
 </style>

@@ -26,10 +26,12 @@
         background-color: rgb(105, 10, 7);
         border-bottom: 4px solid rgb(255, 38, 0);
         padding:  15px 30px;
-        border-radius: 0px 0px 10px 10px;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* position: fixed;
+        z-index: 10; */
     }
 
     #nav #logo-url{
