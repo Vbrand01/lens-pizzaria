@@ -7,6 +7,7 @@
 </template>
 
 <script>
+
   import Navbar from './components/Navbar.vue';
   import Footer from './components/Footer.vue';
 
@@ -41,7 +42,7 @@
   }
 
   .main-container{
-    margin: 350px;
+    margin: 100px;
     min-height: 250px;
   }
 
