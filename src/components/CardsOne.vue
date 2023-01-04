@@ -23,8 +23,8 @@
             </div>
             <div class="col-sm-4">
                 <div class="card">
-                    <!-- <div class="circle"></div>
-                    <div class="circle"></div> -->
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                     <img src="../../public/img/card/quatro.jpg" style="border-radius: 8px;" height="250px" alt="">
                     <h1>Quatro queijos</h1>
                     <p>Assim como o nome já diz, essa pizza é preparada com quatro queijos diferentes, como muçarela,
@@ -91,8 +91,7 @@ h1 {
 .circle {
   width: 100px;
   height: 100px;
-  background: radial-gradient(#056329, rgb(27, 44, 4));
-  border-radius: 60%;
+  background-image: url(../../public/img/ab3.png);
   position: absolute;
   animation: move-up6 2s ease-in infinite alternate-reverse;
 }

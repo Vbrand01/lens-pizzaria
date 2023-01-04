@@ -6,6 +6,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+
 import VueSplide from '@splidejs/vue-splide';
 
 import { Splide } from '@splidejs/splide';
@@ -16,5 +17,6 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
 // or
 import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css'
+
 
 createApp(App).use(router).mount('#app')
