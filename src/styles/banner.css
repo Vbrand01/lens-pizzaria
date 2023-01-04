@@ -1,0 +1,160 @@
+/* #main-banner {
+    background-image: url('../../public/img/pizzahome10.png');
+     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(150, 90, 1) 43%, rgba(255,0,0,1) 100%); 
+     background-position: 0 -250px; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+#bloco1 {
+    color: rgb(221, 221, 221);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.705);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    padding: 40px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+#bloco1 h1 {
+    color: rgb(221, 221, 221);
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 6px;
+    font-size: 64px;
+    background-color: rgba(82, 82, 82, 0.349);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.alinhando-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img3d {
+    margin-top: 60px;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.btoFazerPedido {
+    position: relative;
+    margin: auto;
+    padding: 12px 180px;
+    transition: all 0.2s ease;
+    height: 75px;
+    border: none;
+    background-color: rgb(250, 6, 46);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btoFazerPedido:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 75px;
+    left: 0;
+    display: block;
+    border-radius: 10px;
+    background: rgb(255, 187, 0);
+    width: 45px;
+    transition: all 0.3s ease;
+}
+
+.btoFazerPedido span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: rgb(255, 187, 0);
+}
+
+.btoFazerPedido svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: rgb(255, 187, 0);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.btoFazerPedido:hover:before {
+    width: 100%;
+    background: rgb(0, 133, 51);
+}
+
+.btoFazerPedido:hover svg {
+    transform: translateX(0);
+}
+
+.btoFazerPedido:active {
+    transform: scale(0.95);
+}
+
+/* @media (max-width: 768px){
+    .img3d {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+} */
+
+/* @media (max-width: 768px) {
+    #content {
+        flex-direction: column-reverse;
+    }
+    .img3d {
+    margin-top: 20px;
+    margin-bottom: -30px;
+    width: 100%;
+    }
+    #bloco1{
+        margin-bottom: 100px;
+    }
+    #bloco1 h1 {
+    color: rgb(221, 221, 221);
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 6px;
+    font-size: 15px;
+    background-color: rgba(82, 82, 82, 0.349);
+    border-radius: 8px;
+    padding: 10px;
+    display: non;
+    }
+    .title-logo{
+        flex-direction: column-reverse !important;
+    }
+}
+
+p{
+    font-size: 16px;
+}
+
+.btoFazerPedido span {
+    flex-basis: 100%
+} */

@@ -2,24 +2,24 @@
     <div id="main-banner">
         <div class="container">
             <div class="row" id="content">
-                <div class="col-sm-8" id="bloco1">
+                <div class="col-sm-6" id="bloco1">
                     <div class="title-logo">
                         <h1><img src="../../public/img/logo.png" height="100px" alt="">Pizzaria Lens</h1>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis fuga temporibus error odio
                         sunt! Voluptates asperiores consectetur cumque, impedit distinctio, ad officiis perspiciatis
                         vitae harum aperiam odio veniam quae sequi.</p>
-                <div class="alinhando-button">
-                    <a href="#pedidosHome" class="w-100"><button class="btoFazerPedido">
-                        <span>Fazer um pedido</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button></a>
+                    <div class="alinhando-button">
+                        <a href="#pedidosHome"><button class="btoFazerPedido">
+                                <span>Fazer um pedido</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button></a>
+                    </div>
                 </div>
-                </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <img class="img3d" src="../../public/img/men.png" alt="">
                 </div>
             </div>
@@ -63,6 +63,8 @@ export default {
     padding: 40px;
     border-radius: 20px;
     height: 100%;
+    margin-top: 180px;
+    margin-bottom: 100px;
 }
 
 #bloco1 h1 {
@@ -76,26 +78,26 @@ export default {
     padding: 10px;
 }
 
-.alinhando-button{
+.alinhando-button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .img3d {
-    margin-top: 60px;
+    margin-top: 90px;
     width: 100%;
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
 .btoFazerPedido {
     position: relative;
     margin: auto;
-    padding: 12px 180px;
+    padding: 18px 180px;
     transition: all 0.2s ease;
     height: 75px;
     border: none;
@@ -104,7 +106,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100% !important;
 }
 
 .btoFazerPedido:before {
@@ -162,41 +164,84 @@ a{
     margin-bottom: 60px;
 } */
 
+@media (max-width: 995px) {
+    .container {
+        width: 100% !important;
+    }
+    .img3d {
+    margin-top: 90px;
+    width: 100%;
+    }
+
+    #bloco1 {
+    color: rgb(221, 221, 221);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.705);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    padding: 40px;
+    border-radius: 20px;
+    height: 100%;
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+}
+
 @media (max-width: 768px) {
     #content {
         flex-direction: column-reverse;
     }
+
     .img3d {
-    margin-top: 20px;
-    margin-bottom: -30px;
-    width: 100%;
+        margin-top: 100px;
+        margin-bottom: -220px;
+        width: 100%;
     }
-    #bloco1{
+
+    #bloco1 {
         margin-bottom: 100px;
     }
+
     #bloco1 h1 {
-    color: rgb(221, 221, 221);
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: 6px;
-    font-size: 15px;
-    background-color: rgba(82, 82, 82, 0.349);
-    border-radius: 8px;
-    padding: 10px;
-    display: non;
+        color: rgb(221, 221, 221);
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: 6px;
+        font-size: 15px;
+        background-color: rgba(82, 82, 82, 0.349);
+        border-radius: 8px;
+        padding: 10px;
+        display: non;
     }
-    .title-logo{
+
+    .btoFazerPedido {
+    position: relative;
+    margin: auto;
+    padding: 18px 70px;
+    transition: all 0.2s ease;
+    height: 75px;
+    border: none;
+    background-color: rgb(250, 6, 46);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    }
+
+
+    .title-logo {
         flex-direction: column-reverse !important;
     }
 }
 
-p{
+p {
     font-size: 16px;
 }
 
 .btoFazerPedido span {
     flex-basis: 100%
 }
-
-
 </style>

@@ -1,313 +1,339 @@
 {
-    "ingredientes": {
-      "sabores": [
-        {
-          "id": 1,
-          "tipo": "Calabresa"
-        },
-        {
-          "id": 2,
-          "tipo": "Portuguesa"
-        },
-        {
-          "id": 3,
-          "tipo": "Muçarela"
-        },
-        {
-          "id": 4,
-          "tipo": "Marguerita"
-        },
-        {
-          "id": 5,
-          "tipo": "Quatro queijos"
-        },
-        {
-          "id": 6,
-          "tipo": "Frango com catupiry"
-        },
-        {
-          "id": 7,
-          "tipo": "Pão de alho"
-        },
-        {
-          "id": 8,
-          "tipo": "Alcachofra"
-        },
-        {
-          "id": 9,
-          "tipo": "Mexicana"
-        },
-        {
-          "id": 10,
-          "tipo": "Scamorza"
-        },
-        {
-          "id": 11,
-          "tipo": "Napolitana"
-        },
-        {
-          "id": 12,
-          "tipo": "Brigadeiro"
-        },
-        {
-          "id": 13,
-          "tipo": "Romeu e Julieta"
-        },
-        {
-          "id": 14,
-          "tipo": "Califórnia"
-        },
-                {
-          "id": 15,
-          "tipo": "Americana"
-        },        {
-          "id": 16,
-          "tipo": "Atum"
-        },
-        {
-          "id": 17,
-          "tipo": "Pepperoni"
-        },
-        {
-          "id": 18,
-          "tipo": "Abobrinha com requeijão"
-        },
-        {
-          "id": 19,
-          "tipo": "Palmito e champignon"
-        },
-        {
-          "id": 20,
-          "tipo": "Brócolis e peito de peru"
-        }
-
-      ],
-      "sobremesas": [
-        {
-          "id": 1,
-          "tipo": "Nenhuma"
-        },
-        {
-          "id": 2,
-          "tipo": "Brownie"
-        },
-        {
-          "id": 3,
-          "tipo": "Bananas Flambadas"
-        },
-        {
-          "id": 4,
-          "tipo": "Chocolamour"
-        },
-        {
-          "id": 5,
-          "tipo": "Flambado de frutas vermelhas"
-        },
-        {
-          "id": 6,
-          "tipo": "Pettit Gateau"
-        },
-        {
-          "id": 7,
-          "tipo": "Merengue"
-        },
-        {
-          "id": 8,
-          "tipo": "Pudim de coco"
-        },
-        {
-          "id": 9,
-          "tipo": "Manjar Branco"
-        }
-      ],
-      "bebidas": [
-        {
-          "id": 1,
-          "tipo": "Nenhuma"
-        },
-        {
-          "id": 2,
-          "tipo": "Água"
-        },
-        {
-          "id": 3,
-          "tipo": "Caipirinha Caju Limão"
-        },
-        {
-          "id": 4,
-          "tipo": "Caipirinha de Frutas Amarelas"
-        },
-        {
-          "id": 5,
-          "tipo": "Coquetel"
-        },
-        {
-          "id": 6,
-          "tipo": "Coca-cola"
-        },
-        {
-          "id": 7,
-          "tipo": "Pepsi"
-        },
-        {
-          "id": 8,
-          "tipo": "Guaraná"
-        },
-        {
-          "id": 9,
-          "tipo": "Fanta"
-        },
-        {
-          "id": 10,
-          "tipo": "Spride"
-        },
-        {
-          "id": 11,
-          "tipo": "Lipton"
-        },
-        {
-          "id": 12,
-          "tipo": "Red Bull"
-        },
-        {
-          "id": 13,
-          "tipo": "Monster"
-        },
-        {
-          "id": 14,
-          "tipo": "Sukita"
-        },
-        {
-          "id": 15,
-          "tipo": "Kuat"
-        },
-        {
-          "id": 16,
-          "tipo": "Soda"
-        },
-        {
-          "id": 17,
-          "tipo": "Dolly"
-        },
-        {
-          "id": 18,
-          "tipo": "Suco de Abacaxi"
-        },
-        {
-          "id": 19,
-          "tipo": "Suco de Amora"
-        },
-        {
-          "id": 20,
-          "tipo": "Suco de Laranja"
-        },
-        {
-          "id": 21,
-          "tipo": "Suco de Limão"
-        },
-        {
-          "id": 22,
-          "tipo": "Suco de Maracujá"
-        },
-        {
-          "id": 23,
-          "tipo": "Suco de Morango"
-        },
-        {
-          "id": 24,
-          "tipo": "Cerveja Origina"
-        },
-        {
-          "id": 25,
-          "tipo": "Vodka"
-        },
-        {
-          "id": 26,
-          "tipo": "Chopp "
-        }, 
-        {
-          "id": 27,
-          "tipo": "Chopp Claro"
-        },
-        {
-          "id": 28,
-          "tipo": "Chopp Black"
-        },
-        {
-          "id": 29,
-          "tipo": "Chopp Garotinho"
-        },
-        {
-          "id": 30,
-          "tipo": "Chopp Groselha"
-        },
-        {
-          "id": 31,
-          "tipo": "Cocktail Frutas"
-        },
-        {
-          "id": 32,
-          "tipo": "Cerveja Brahma Zero"
-        },
-        {
-          "id": 33,
-          "tipo": "Cerveja Budweiser"
-        },
-        {
-          "id": 34,
-          "tipo": "Cerveja Cerpa"
-        },
-        {
-          "id": 35,
-          "tipo": "Cerveja Malzbier"
-        },    
-        {
-          "id": 36,
-          "tipo": "Cerveja Stella Artois"
-        }
-
-        
-      ],
-      "opcionais": [
-        {
-          "id": 1,
-          "tipo": "Catupiry"
-        },
-        {
-          "id": 2,
-          "tipo": "Calabresa"
-        },
-        {
-          "id": 3,
-          "tipo": "Cheddar"
-        },
-        {
-          "id": 4,
-          "tipo": "Tomate seco"
-        },
-        {
-          "id": 5,
-          "tipo": "Peperoni"
-        },
-        {
-          "id": 6,
-          "tipo": "Provolone"
-        }
-      ]
-    },
-    "status": [
+  "ingredientes": {
+    "sabores": [
       {
         "id": 1,
-        "tipo": "Solicitado"
+        "tipo": "Calabresa"
       },
       {
         "id": 2,
-        "tipo": "Em produção"
+        "tipo": "Portuguesa"
       },
       {
         "id": 3,
-        "tipo": "Finalizado"
+        "tipo": "Muçarela"
+      },
+      {
+        "id": 4,
+        "tipo": "Marguerita"
+      },
+      {
+        "id": 5,
+        "tipo": "Quatro queijos"
+      },
+      {
+        "id": 6,
+        "tipo": "Frango com catupiry"
+      },
+      {
+        "id": 7,
+        "tipo": "Pão de alho"
+      },
+      {
+        "id": 8,
+        "tipo": "Alcachofra"
+      },
+      {
+        "id": 9,
+        "tipo": "Mexicana"
+      },
+      {
+        "id": 10,
+        "tipo": "Scamorza"
+      },
+      {
+        "id": 11,
+        "tipo": "Napolitana"
+      },
+      {
+        "id": 12,
+        "tipo": "Brigadeiro"
+      },
+      {
+        "id": 13,
+        "tipo": "Romeu e Julieta"
+      },
+      {
+        "id": 14,
+        "tipo": "Califórnia"
+      },
+      {
+        "id": 15,
+        "tipo": "Americana"
+      },
+      {
+        "id": 16,
+        "tipo": "Atum"
+      },
+      {
+        "id": 17,
+        "tipo": "Pepperoni"
+      },
+      {
+        "id": 18,
+        "tipo": "Abobrinha com requeijão"
+      },
+      {
+        "id": 19,
+        "tipo": "Palmito e champignon"
+      },
+      {
+        "id": 20,
+        "tipo": "Brócolis e peito de peru"
       }
     ],
-    "burgers": []
-  }
+    "sobremesas": [
+      {
+        "id": 1,
+        "tipo": "Nenhuma"
+      },
+      {
+        "id": 2,
+        "tipo": "Brownie"
+      },
+      {
+        "id": 3,
+        "tipo": "Bananas Flambadas"
+      },
+      {
+        "id": 4,
+        "tipo": "Chocolamour"
+      },
+      {
+        "id": 5,
+        "tipo": "Flambado de frutas vermelhas"
+      },
+      {
+        "id": 6,
+        "tipo": "Pettit Gateau"
+      },
+      {
+        "id": 7,
+        "tipo": "Merengue"
+      },
+      {
+        "id": 8,
+        "tipo": "Pudim de coco"
+      },
+      {
+        "id": 9,
+        "tipo": "Manjar Branco"
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "tipo": "Nenhuma"
+      },
+      {
+        "id": 2,
+        "tipo": "Água"
+      },
+      {
+        "id": 3,
+        "tipo": "Caipirinha Caju Limão"
+      },
+      {
+        "id": 4,
+        "tipo": "Caipirinha de Frutas Amarelas"
+      },
+      {
+        "id": 5,
+        "tipo": "Coquetel"
+      },
+      {
+        "id": 6,
+        "tipo": "Coca-cola"
+      },
+      {
+        "id": 7,
+        "tipo": "Pepsi"
+      },
+      {
+        "id": 8,
+        "tipo": "Guaraná"
+      },
+      {
+        "id": 9,
+        "tipo": "Fanta"
+      },
+      {
+        "id": 10,
+        "tipo": "Spride"
+      },
+      {
+        "id": 11,
+        "tipo": "Lipton"
+      },
+      {
+        "id": 12,
+        "tipo": "Red Bull"
+      },
+      {
+        "id": 13,
+        "tipo": "Monster"
+      },
+      {
+        "id": 14,
+        "tipo": "Sukita"
+      },
+      {
+        "id": 15,
+        "tipo": "Kuat"
+      },
+      {
+        "id": 16,
+        "tipo": "Soda"
+      },
+      {
+        "id": 17,
+        "tipo": "Dolly"
+      },
+      {
+        "id": 18,
+        "tipo": "Suco de Abacaxi"
+      },
+      {
+        "id": 19,
+        "tipo": "Suco de Amora"
+      },
+      {
+        "id": 20,
+        "tipo": "Suco de Laranja"
+      },
+      {
+        "id": 21,
+        "tipo": "Suco de Limão"
+      },
+      {
+        "id": 22,
+        "tipo": "Suco de Maracujá"
+      },
+      {
+        "id": 23,
+        "tipo": "Suco de Morango"
+      },
+      {
+        "id": 24,
+        "tipo": "Cerveja Origina"
+      },
+      {
+        "id": 25,
+        "tipo": "Vodka"
+      },
+      {
+        "id": 26,
+        "tipo": "Chopp "
+      },
+      {
+        "id": 27,
+        "tipo": "Chopp Claro"
+      },
+      {
+        "id": 28,
+        "tipo": "Chopp Black"
+      },
+      {
+        "id": 29,
+        "tipo": "Chopp Garotinho"
+      },
+      {
+        "id": 30,
+        "tipo": "Chopp Groselha"
+      },
+      {
+        "id": 31,
+        "tipo": "Cocktail Frutas"
+      },
+      {
+        "id": 32,
+        "tipo": "Cerveja Brahma Zero"
+      },
+      {
+        "id": 33,
+        "tipo": "Cerveja Budweiser"
+      },
+      {
+        "id": 34,
+        "tipo": "Cerveja Cerpa"
+      },
+      {
+        "id": 35,
+        "tipo": "Cerveja Malzbier"
+      },
+      {
+        "id": 36,
+        "tipo": "Cerveja Stella Artois"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Catupiry"
+      },
+      {
+        "id": 2,
+        "tipo": "Calabresa"
+      },
+      {
+        "id": 3,
+        "tipo": "Cheddar"
+      },
+      {
+        "id": 4,
+        "tipo": "Tomate seco"
+      },
+      {
+        "id": 5,
+        "tipo": "Peperoni"
+      },
+      {
+        "id": 6,
+        "tipo": "Provolone"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Solicitado"
+    },
+    {
+      "id": 2,
+      "tipo": "Em produção"
+    },
+    {
+      "id": 3,
+      "tipo": "Finalizado"
+    }
+  ],
+  "Pizzas": [
+    {
+      "nome": "sadsad",
+      "sabor": "sabor.tipo",
+      "sobremesa": "sobremesa.tipo",
+      "bebida": "bebida.tipo",
+      "opcionais": [],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Victor",
+      "sabor": "sabor.tipo",
+      "sobremesa": "sobremesa.tipo",
+      "bebida": "bebida.tipo",
+      "opcionais": [],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "nome": "Joao",
+      "sabor": "sabor.tipo",
+      "sobremesa": "sobremesa.tipo",
+      "bebida": "bebida.tipo",
+      "opcionais": [],
+      "status": "Solicitado",
+      "id": 3
+    }
+  ]
+}

@@ -1,69 +1,72 @@
 <template>
     <div class="container" id="pedidosHome">
-        <div class="form ">
-            <div class="row">
-                <div class="col-sm-4">
-                </div>
-                <div class="col-sm-4 styleForm">
-                    <div class="row">
-                        <div class="col-sm-12 p-1">
-                            <label for="nome">Nome do cliente:</label>
-                            <input type="text" class="form-control" id="nome" name="nome" v-model="nome"
-                                placeholder="Insira o nome">
-                        </div>
+        <div class="form-pizza">
+            <form @submit="createPedido">
+                <div class="row">
+                    <div class="col-sm-4">
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12 p-1">
-                            <label for="sabor">Escolha o sabor:</label>
-                            <select name="sabor" class="form-select" id="sabor" v-model="sabor">
-                                <option value="" selected disabled>Selecione o sabor que deseja</option>
-                                <option v-for="sabor in sabores" :key="sabor.id" value="sabor.tipo">{{ sabor.tipo }}
-                                </option>
-                            </select>
+                    <div class="col-sm-4 styleForm">
+                        <div class="row">
+                            <div class="col-sm-12 p-1">
+                                <label for="nome">Nome do cliente:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" v-model="nome"
+                                    placeholder="Insira o nome">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 p-1">
-                            <label for="sobremesa">Escolha uma sobremesa:</label>
-                            <select name="sobremesa" class="form-select" id="sobremesa" v-model="sobremesa">
-                                <option value="" selected disabled>Selecione a sobremesa que deseja</option>
-                                <option v-for="sobremesa in sobremesas" :key="sobremesa.id" value="sobremesa.tipo">
-                                    {{ sobremesa.tipo }}</option>
-                            </select>
+                        <div class="row">
+                            <div class="col-sm-12 p-1">
+                                <label for="sabor">Escolha o sabor:</label>
+                                <select name="sabor" class="form-select" id="sabor" v-model="sabor">
+                                    <option value="" selected disabled>Selecione o sabor que deseja</option>
+                                    <option v-for="sabor in sabores" :key="sabor.id" value="sabor.tipo">{{ sabor.tipo }}
+                                    </option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 p-1">
-                            <label for="bebida">Escolha uma bebida:</label>
-                            <select name="bebida" class="form-select" id="bebida" v-model="bebida">
-                                <option value="" selected disabled>Selecione a bebida que deseja</option>
-                                <option v-for="bebida in bebidas" :key="bebida.id" value="bebida.tipo">{{ bebida.tipo }}
-                                </option>
-                            </select>
+                        <div class="row">
+                            <div class="col-sm-12 p-1">
+                                <label for="sobremesa">Escolha uma sobremesa:</label>
+                                <select name="sobremesa" class="form-select" id="sobremesa" v-model="sobremesa">
+                                    <option value="" selected disabled>Selecione a sobremesa que deseja</option>
+                                    <option v-for="sobremesa in sobremesas" :key="sobremesa.id" value="sobremesa.tipo">
+                                        {{ sobremesa.tipo }}</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 p-1" style="display:">
-                            <div class="col-sm-12 p-1 m-1" style="display:">
-                                <label for="opcional">Borda:</label>
-                                <div class="content" v-for="opcional in opcionaisdata" :key="opcional.id"
-                                    value="opcional.tipo">
-                                    <input type="checkbox" class="form-check-input" name="opcional" id="opcional"
-                                        value="aaaaa">
-                                    <span>{{ opcional.tipo }}</span>
+                        <div class="row">
+                            <div class="col-sm-12 p-1">
+                                <label for="bebida">Escolha uma bebida:</label>
+                                <select name="bebida" class="form-select" id="bebida" v-model="bebida">
+                                    <option value="" selected disabled>Selecione a bebida que deseja</option>
+                                    <option v-for="bebida in bebidas" :key="bebida.id" value="bebida.tipo">
+                                        {{ bebida.tipo }}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 p-1" style="display:">
+                                <div class="col-sm-12 p-1 m-1" style="display:">
+                                    <label for="opcional">Borda:</label>
+                                    <div class="content" v-for="opcional in opcionaisdata" :key="opcional.id"
+                                        value="opcional.tipo">
+                                        <input type="checkbox" class="form-check-input" name="opcional" id="opcional"
+                                            value="aaaaa">
+                                        <span>{{ opcional.tipo }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 p-1 mt-2">
-                            <input type="submit" id="submit" value="Enviar pedido"
-                                class="btn btn-outline-success w-100 submit">
+                        <div class="row">
+                            <div class="col-sm-12 p-1 mt-2">
+                                <input type="submit" id="submit" value="Enviar pedido"
+                                    class="btn btn-outline-success w-100 submit">
+                            </div>
+                            <div class="col-sm-4"></div>
                         </div>
-                        <div class="col-sm-4"></div>
                     </div>
                 </div>
-            </div>
+            </form>
 
         </div>
     </div>
@@ -85,7 +88,6 @@ export default {
             sobremesa: null,
             bebida: null,
             opcionais: [],
-            status: "Solicitado",
             msg: null
         }
     },
@@ -99,6 +101,39 @@ export default {
             this.sobremesas = data.sobremesas;
             this.bebidas = data.bebidas;
             this.opcionaisdata = data.opcionais;
+        },
+        async createPedido(e) {
+            e.preventDefault();
+
+            const data = {
+                nome: this.nome,
+                sabor: this.sabor,
+                sobremesa: this.sobremesa,
+                bebida: this.bebida,
+                opcionais: Array.from(this.opcionais),
+                status: "Solicitado"
+            }
+
+            const dataJson = JSON.stringify(data);
+
+            const req = await fetch("http://localhost:3000/Pizzas", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: dataJson
+            });
+
+            const res = await req.json();
+
+            // colocar uma msg de sistema
+
+            // limpar os campos
+            this.nome = "";
+            this.sabor = "";
+            this.sobremesa = "";
+            this.bebida = "";
+            this.opcionais = "";
+
+
         }
     },
 
@@ -168,16 +203,17 @@ span {
 
 
 @media (max-width: 768px) {
-    .container{
+    .container {
         padding: 25px !important;
     }
-    .form {
+
+    .form-pizza {
         border-radius: 20px;
     }
 }
 
-@media (max-width: 900px){
-    .styleForm{
+@media (max-width: 900px) {
+    .styleForm {
         width: 100%;
     }
 }

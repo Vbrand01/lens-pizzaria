@@ -1,6 +1,12 @@
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+import bannerCSS from './styles/banner.css'
+
 
 import { createApp } from 'vue'
 import App from './App.vue'
