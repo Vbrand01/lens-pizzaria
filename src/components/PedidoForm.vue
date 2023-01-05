@@ -1,11 +1,12 @@
 <template>
     <div class="container" id="pedidosHome">
+        <Message :msg="msg" v-show="msg" />
         <div class="form-pizza">
-            <form @submit="createPedido">
+            <form method="POST" @submit="createPedido">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                     </div>
-                    <div class="col-sm-4 styleForm">
+                    <div class="col-sm-6 styleForm">
                         <div class="row">
                             <div class="col-sm-12 p-1">
                                 <label for="nome">Nome do cliente:</label>
@@ -17,8 +18,8 @@
                             <div class="col-sm-12 p-1">
                                 <label for="sabor">Escolha o sabor:</label>
                                 <select name="sabor" class="form-select" id="sabor" v-model="sabor">
-                                    <option value="" selected disabled>Selecione o sabor que deseja</option>
-                                    <option v-for="sabor in sabores" :key="sabor.id" value="sabor.tipo">{{ sabor.tipo }}
+                                    <option value="">Selecione o sabor que deseja</option>
+                                    <option v-for="sabor in sabores" :key="sabor.id" :value="sabor.tipo">{{ sabor.tipo }}
                                     </option>
                                 </select>
                             </div>
@@ -27,8 +28,8 @@
                             <div class="col-sm-12 p-1">
                                 <label for="sobremesa">Escolha uma sobremesa:</label>
                                 <select name="sobremesa" class="form-select" id="sobremesa" v-model="sobremesa">
-                                    <option value="" selected disabled>Selecione a sobremesa que deseja</option>
-                                    <option v-for="sobremesa in sobremesas" :key="sobremesa.id" value="sobremesa.tipo">
+                                    <option value="">Selecione a sobremesa que deseja</option>
+                                    <option v-for="sobremesa in sobremesas" :key="sobremesa.id" :value="sobremesa.tipo">
                                         {{ sobremesa.tipo }}</option>
                                 </select>
                             </div>
@@ -37,8 +38,8 @@
                             <div class="col-sm-12 p-1">
                                 <label for="bebida">Escolha uma bebida:</label>
                                 <select name="bebida" class="form-select" id="bebida" v-model="bebida">
-                                    <option value="" selected disabled>Selecione a bebida que deseja</option>
-                                    <option v-for="bebida in bebidas" :key="bebida.id" value="bebida.tipo">
+                                    <option value="">Selecione a bebida que deseja</option>
+                                    <option v-for="bebida in bebidas" :key="bebida.id" :value="bebida.tipo">
                                         {{ bebida.tipo }}
                                     </option>
                                 </select>
@@ -50,8 +51,8 @@
                                     <label for="opcional">Borda:</label>
                                     <div class="content" v-for="opcional in opcionaisdata" :key="opcional.id"
                                         value="opcional.tipo">
-                                        <input type="checkbox" class="form-check-input" name="opcional" id="opcional"
-                                            value="aaaaa">
+                                        <input type="checkbox" class="form-check-input" name="opcionais" id="opcional" v-model="opcionais"
+                                            :value="opcional.tipo">
                                         <span>{{ opcional.tipo }}</span>
                                     </div>
                                 </div>
@@ -62,7 +63,7 @@
                                 <input type="submit" id="submit" value="Enviar pedido"
                                     class="btn btn-outline-success w-100 submit">
                             </div>
-                            <div class="col-sm-4"></div>
+                            <div class="col-sm-3"></div>
                         </div>
                     </div>
                 </div>
@@ -73,8 +74,16 @@
 </template>
 
 <script>
+
+import Message from './Message.vue';
+
 export default {
     name: 'PedidoForm',
+    
+    components: {
+        Message
+    },
+
 
     data() {
         return {
@@ -82,7 +91,6 @@ export default {
             sobremesas: null,
             bebidas: null,
             opcionaisdata: null,
-
             nome: null,
             sabor: null,
             sobremesa: null,
@@ -103,7 +111,7 @@ export default {
             this.opcionaisdata = data.opcionais;
         },
         async createPedido(e) {
-            e.preventDefault();
+            e.preventDefault()
 
             const data = {
                 nome: this.nome,
@@ -125,16 +133,20 @@ export default {
             const res = await req.json();
 
             // colocar uma msg de sistema
+            this.msg = `Pedido Nº ${res.id} realizado com sucesso`;
+
+            setTimeout(() => this.msg = "", 2000);
 
             // limpar os campos
             this.nome = "";
             this.sabor = "";
             this.sobremesa = "";
             this.bebida = "";
-            this.opcionais = "";
+            this.opcionais = [];
 
 
-        }
+        },
+        
     },
 
     mounted() {

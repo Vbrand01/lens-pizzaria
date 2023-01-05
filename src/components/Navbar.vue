@@ -41,10 +41,15 @@
 
 <style scoped>
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Kaushan+Script&family=Monoton&family=Russo+One&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Kaushan+Script&family=Luckiest+Guy&family=Monoton&family=Russo+One&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Kaushan+Script&family=Luckiest+Guy&family=Monoton&family=Passion+One:wght@400;700;900&family=Russo+One&family=VT323&display=swap');
+
     #logo {
         width: 100px;
         height: 100px;
     }
+
 
     .background-nav{
         background-color: rgb(49, 6, 3);
@@ -57,6 +62,13 @@
         display: flex;
         justify-content: space-between;
         z-index: 10;
+    }
+
+    .navbar-brand{
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: 25px;
+      color: rgb(212, 212, 212);
     }
 
 

@@ -13,8 +13,8 @@ export default{
 <style scoped>
     #footer{
         height: 100px;
-        background-color: rgb(105, 10, 7);
-        border-top: 4px solid rgb(255, 38, 0);
+        background-color: rgba(77, 8, 8, 0.945);
+        border-top: 4px solid rgb(194, 0, 0);
         color: rgb(255, 187, 0);
         display: flex;
         align-items: center;

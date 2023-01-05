@@ -309,31 +309,66 @@
   ],
   "Pizzas": [
     {
-      "nome": "sadsad",
-      "sabor": "sabor.tipo",
-      "sobremesa": "sobremesa.tipo",
-      "bebida": "bebida.tipo",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
       "nome": "Victor",
-      "sabor": "sabor.tipo",
-      "sobremesa": "sobremesa.tipo",
-      "bebida": "bebida.tipo",
-      "opcionais": [],
+      "sabor": "Brigadeiro",
+      "sobremesa": "Pudim de coco",
+      "bebida": "Spride",
+      "opcionais": [
+        "Peperoni",
+        "Tomate seco"
+      ],
       "status": "Solicitado",
-      "id": 2
+      "id": 4
     },
     {
-      "nome": "Joao",
-      "sabor": "sabor.tipo",
-      "sobremesa": "sobremesa.tipo",
-      "bebida": "bebida.tipo",
-      "opcionais": [],
+      "nome": "Maria",
+      "sabor": "Muçarela",
+      "sobremesa": "Brownie",
+      "bebida": "Soda",
+      "opcionais": [
+        "Catupiry"
+      ],
       "status": "Solicitado",
-      "id": 3
+      "id": 5
+    },
+    {
+      "nome": "Sara",
+      "sabor": "Quatro queijos",
+      "sobremesa": "Pettit Gateau",
+      "bebida": "Coca-cola",
+      "opcionais": [
+        "Tomate seco",
+        "Cheddar",
+        "Calabresa"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    },
+    {
+      "nome": "Gil",
+      "sabor": "Scamorza",
+      "sobremesa": "Flambado de frutas vermelhas",
+      "bebida": "Monster",
+      "opcionais": [
+        "Provolone",
+        "Peperoni",
+        "Cheddar",
+        "Tomate seco",
+        "Calabresa"
+      ],
+      "status": "Solicitado",
+      "id": 7
+    },
+    {
+      "nome": "Jeferson",
+      "sabor": "Portuguesa",
+      "sobremesa": "Brownie",
+      "bebida": "Soda",
+      "opcionais": [
+        "Catupiry"
+      ],
+      "status": "Solicitado",
+      "id": 8
     }
   ]
 }
