@@ -79,11 +79,6 @@ import Message from './Message.vue';
 
 export default {
     name: 'PedidoForm',
-    
-    components: {
-        Message
-    },
-
 
     data() {
         return {
@@ -151,7 +146,12 @@ export default {
 
     mounted() {
         this.getIngredientes()
+    },
+
+    components: {
+        Message
     }
+
 }
 </script>
 

@@ -33,8 +33,14 @@
 <style scoped>
   .PedidoForm{
     border-radius: 500px 500px 20px 20px;
-    background-image: url(../../public/img/card/fundo.jpg);
+    background-color: rgb(51, 10, 10);
     padding: 100px;
+  }
+
+  h1{
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgba(77, 8, 8, 0.945);
   }
 
   @media (max-width: 900px){

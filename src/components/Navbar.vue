@@ -68,7 +68,16 @@
       font-weight: 800;
       letter-spacing: 1px;
       font-size: 25px;
-      color: rgb(212, 212, 212);
+      color: rgb(243, 207, 1);
+      background-color: transparent;
+      border: solid 2px rgb(243, 207, 1);
+      padding: 15px;
+      border-radius: 8px;
+      transition: 1s;
+    }
+
+    .navbar-brand:hover{
+      background-color: rgb(250, 6, 46);
     }
 
 

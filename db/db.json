@@ -309,18 +309,6 @@
   ],
   "Pizzas": [
     {
-      "nome": "Victor",
-      "sabor": "Brigadeiro",
-      "sobremesa": "Pudim de coco",
-      "bebida": "Spride",
-      "opcionais": [
-        "Peperoni",
-        "Tomate seco"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
       "nome": "Maria",
       "sabor": "Muçarela",
       "sobremesa": "Brownie",
@@ -332,43 +320,38 @@
       "id": 5
     },
     {
-      "nome": "Sara",
-      "sabor": "Quatro queijos",
-      "sobremesa": "Pettit Gateau",
-      "bebida": "Coca-cola",
+      "nome": "sdasad",
+      "sabor": "Portuguesa",
+      "sobremesa": "Brownie",
+      "bebida": "Caipirinha Caju Limão",
       "opcionais": [
-        "Tomate seco",
-        "Cheddar",
         "Calabresa"
       ],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "nome": "Gil",
-      "sabor": "Scamorza",
-      "sobremesa": "Flambado de frutas vermelhas",
-      "bebida": "Monster",
-      "opcionais": [
-        "Provolone",
-        "Peperoni",
-        "Cheddar",
-        "Tomate seco",
-        "Calabresa"
-      ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 7
     },
     {
-      "nome": "Jeferson",
-      "sabor": "Portuguesa",
-      "sobremesa": "Brownie",
-      "bebida": "Soda",
+      "nome": "Fulano",
+      "sabor": "Quatro queijos",
+      "sobremesa": "Flambado de frutas vermelhas",
+      "bebida": "Cerveja Brahma Zero",
       "opcionais": [
-        "Catupiry"
+        "Catupiry",
+        "Calabresa"
       ],
       "status": "Solicitado",
       "id": 8
+    },
+    {
+      "nome": "Giovanni",
+      "sabor": "Calabresa",
+      "sobremesa": "Flambado de frutas vermelhas",
+      "bebida": "Coca-cola",
+      "opcionais": [
+        "Catupiry"
+      ],
+      "status": "Finalizado",
+      "id": 10
     }
   ]
 }
