@@ -10,8 +10,9 @@
 
 <br>
 
-<h1>Descrição do Projeto</h1>
-> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+<h1>Descrição</h1>
+<h3>Tá com vontade de comer uma pizza de qualidade? Vem para a LENS! 🍕😊</h3>
+<p>O projeto consiste em um web site cliente/adm permitindo que o usuário consiga fazer pedidos por meio da página HOME e também possa visualizar os pedidos efetuados dentro da página PEDIDOS. O projeto é totalmente ficticio, as imagens não tem direitos autorais e a maioria foram feitas manipulações pelo Photoshop. Aliás, aproveitei o projeto para testar novas bibliotecas, que por sinal são muito eficazes. O back-end da aplicação foi desenvolvido com JSON puro, permitindo assim focar mais no front-end do que no back, afinal esse modelo é um back-end improvisado(atualmente)</p>
 
 
 <hr>
