@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                     </div>
-                    <div class="col-sm-6 styleForm">
+                    <div class="col-sm-12 styleForm">
                         <div class="row">
                             <div class="col-sm-12 p-1">
                                 <label for="nome">Nome do cliente:</label>
@@ -161,25 +161,27 @@ export default {
 }
 
 .styleForm {
-    border: solid 2px rgba(179, 179, 179, 0);
-    background-color: rgba(77, 8, 8, 0.945);
+    background-color: rgba(48, 4, 4, 0.945);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.137);
     backdrop-filter: blur(7.9px);
     -webkit-backdrop-filter: blur(7.9px);
-    padding: 30px;
-    border-radius: 15px;
-    border: 2px solid yellow;
+    padding: 40px;
+    border-radius: 20px;
     transition: 0.8s;
+    -webkit-box-shadow: 2px 6px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 22px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px 6px 22px 1px rgba(247, 3, 3, 0.75);
+
 }
 
 .styleForm:hover{
-    border: 3px solid rgba(255, 255, 0, 0);
+    border: 3px solid rgba(255, 255, 0, 0.973);
 }
 
 input,
 select {
     border: none;
-    background-color: rgb(56, 9, 9);
+    background-color: rgb(77, 18, 18);
     color: rgb(204, 204, 204);
 }
 

@@ -320,17 +320,6 @@
       "id": 5
     },
     {
-      "nome": "sdasad",
-      "sabor": "Portuguesa",
-      "sobremesa": "Brownie",
-      "bebida": "Caipirinha Caju Limão",
-      "opcionais": [
-        "Calabresa"
-      ],
-      "status": "Finalizado",
-      "id": 7
-    },
-    {
       "nome": "Fulano",
       "sabor": "Quatro queijos",
       "sobremesa": "Flambado de frutas vermelhas",
@@ -366,15 +355,15 @@
       "id": 11
     },
     {
-      "nome": "tsefdfsd",
-      "sabor": "Muçarela",
-      "sobremesa": "Bananas Flambadas",
-      "bebida": "Dolly",
+      "nome": "Eu",
+      "sabor": "Portuguesa",
+      "sobremesa": "Brownie",
+      "bebida": "Soda",
       "opcionais": [
-        "Catupiry"
+        "Calabresa"
       ],
-      "status": "Solicitado",
-      "id": 12
+      "status": "Em produção",
+      "id": 16
     }
   ]
 }

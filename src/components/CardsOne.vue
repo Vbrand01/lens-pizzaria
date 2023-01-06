@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 align">
+      <div class="col-xl-4 align">
         <div class="card">
           <div class="circle"></div>
           <div class="circle"></div>
@@ -11,7 +11,7 @@
             e orégano salpicado.</p>
         </div>
       </div>
-      <div class="col-sm-4 align">
+      <div class="col-xl-4 align">
         <div class="card">
           <!-- <div class="circle"></div>
                     <div class="circle"></div> -->
@@ -21,7 +21,7 @@
             Confesso que é uma das minhas preferidas!</p>
         </div>
       </div>
-      <div class="col-sm-4 align">
+      <div class="col-xl-4 align">
         <div class="card">
           <div class="circle"></div>
           <div class="circle"></div>

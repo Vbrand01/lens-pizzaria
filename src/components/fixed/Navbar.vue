@@ -52,7 +52,6 @@
 
 
     .background-nav{
-        overflow: hidden;
         background-color: rgba(77, 8, 8, 0.945);
         height: 115px; /* defina uma altura */
         position: fixed;

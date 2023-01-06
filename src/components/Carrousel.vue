@@ -2,7 +2,8 @@
     <div class="fundo">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-xl-3"></div>
+                <div class="col-xl-6">
                     <div class="carrousel">
                         <!-- <h2>Pizzas mais deliciosas da região</h2> -->
                         <splide :options="options">
@@ -34,43 +35,11 @@
                                 <img src="../../public/img/card/9hd.png" alt="">
                             </splide-slide>
                         </splide>
+                        <PedidoForm class="" />
                     </div>
                 </div>
-
-                <div class="col-sm-6 mobile">
-                    <div class="carrousel">
-                        <splide :options="options">
-                            <splide-slide>
-                                <img src="../../public/img/card/6hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/7hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/8hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/4hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/5hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/9hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/2hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/1hd.png" alt="">
-                            </splide-slide>
-                            <splide-slide>
-                                <img src="../../public/img/card/3hd.png" alt="">
-                            </splide-slide>
-                        </splide>
-                    </div>
+                <div class="col-xl-3 bord">
                 </div>
-
             </div>
         </div>
     </div>
@@ -81,14 +50,17 @@
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import { Grid } from '@splidejs/splide-extension-grid';
 import { removeDotSegments } from 'uri-js';
+import PedidoForm from './PedidoForm.vue';
 
 
 export default {
     components: {
-        Splide,
-        SplideSlide,
-        Grid,
-    },
+    Splide,
+    SplideSlide,
+    Grid,
+    PedidoForm,
+    
+},
     data() {
         return {
             options: {
@@ -128,12 +100,10 @@ export default {
     padding: 10px;
     padding: 20px;
     margin-top: 50px;
-    border-radius: 40vh;
 }
 
 .carrousel {
     color: rgb(221, 221, 221);
-    text-align: center;
     background: rgba(53, 4, 2, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -155,6 +125,10 @@ h2 {
 @media (max-width: 575px){
     .col-sm-6{
         padding: 10px !important;
+    }
+
+    .carrousel{
+        padding: 0px;
     }
 }
 

@@ -2,16 +2,16 @@
   <Banner />
   <div class="main-container">
     <CardsOne />
+    <Faixa />
     <CardsTwo />
-    <br>
-    <h1>Monte a sua pizza:</h1>
-    <PedidoForm class="PedidoForm" />
+    <!-- <PedidoForm class="PedidoForm" /> -->
   </div>
 </template>
 
 <script>
 
-  import Banner from '../components/Banner.vue';
+  import Faixa from '@/components/Faixa.vue';
+import Banner from '../components/Banner.vue';
   import CardsOne from '../components/CardsOne.vue';
   import CardsTwo from '../components/Carrousel.vue';
   import PedidoForm from '../components/PedidoForm.vue';
@@ -19,25 +19,26 @@
   export default {
     name: "Home",
     components: {
-      Banner,
-      CardsOne,
-      CardsTwo,
-      PedidoForm
-    }
+    Banner,
+    CardsOne,
+    CardsTwo,
+    PedidoForm,
+    Faixa
+}
   }
 
 </script>
 
 <style scoped>
   .PedidoForm{
-    border-radius: 500px;
-    background-color: rgb(51, 10, 10);
+    border-radius: 20px;
+    background-color: transparent;
     padding: 120px;
     transition: 0.8s;
   }
 
   .PedidoForm:hover{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(241, 241, 241);
   }
 
   h1{

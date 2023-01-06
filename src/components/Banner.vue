@@ -2,13 +2,11 @@
     <div id="main-banner">
         <div class="container">
             <div class="row" id="content">
-                <div class="col-sm-6" id="coluna">
+                <div class="col-xl-6" id="coluna">
                     <div class="title-logo">
-                        <h1><img src="../../public/img/logo.png" height="100px" alt="">Pizzaria Lens</h1>
+                        <h1><img src="../../public/img/logo.png" height="100px" alt="">Pizzaria</h1>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis fuga temporibus error odio
-                        sunt! Voluptates asperiores consectetur cumque, impedit distinctio, ad officiis perspiciatis
-                        vitae harum aperiam odio veniam quae sequi.</p>
+                    <p>A pizzaria mais incrível da região! Aqui você encontra as melhores e mais saborosas pizzas que já comeu. Nós da Lens sempre pensamos primeiro no clientes.</p>
                     <div class="alinhando-button">
                         <a href="#pedidosHome"><button class="btoFazerPedido">
                                 <span>Fazer um pedido</span>
@@ -19,7 +17,7 @@
                             </button></a>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-xl-6">
                     <img class="coluna-image" src="../../public/img/men.png" alt="">
                 </div>
             </div>
@@ -55,7 +53,7 @@ export default {
 #coluna {
     color: rgb(221, 221, 221);
     text-align: center;
-    background: rgba(0, 0, 0, 0.705);
+    background: rgba(41, 3, 3, 0.692);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.9px);
@@ -85,6 +83,10 @@ export default {
 
 a {
     text-decoration: none;
+}
+
+p{
+    text-align: left;
 }
 
 .btoFazerPedido {
@@ -183,7 +185,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #content {
         flex-direction: column-reverse;
     }
