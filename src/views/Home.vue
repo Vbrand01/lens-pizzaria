@@ -14,9 +14,7 @@
   import Banner from '../components/Banner.vue';
   import CardsOne from '../components/CardsOne.vue';
   import CardsTwo from '../components/Carrousel.vue';
-  import PizzaForm from '../components/PizzaForm.vue';
   import PedidoForm from '../components/PedidoForm.vue';
-
 
   export default {
     name: "Home",
@@ -32,9 +30,14 @@
 
 <style scoped>
   .PedidoForm{
-    border-radius: 500px 500px 20px 20px;
+    border-radius: 500px;
     background-color: rgb(51, 10, 10);
-    padding: 100px;
+    padding: 120px;
+    transition: 0.8s;
+  }
+
+  .PedidoForm:hover{
+    background-color: rgb(224, 224, 224);
   }
 
   h1{

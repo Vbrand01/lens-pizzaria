@@ -7,28 +7,31 @@
                         <!-- <h2>Pizzas mais deliciosas da região</h2> -->
                         <splide :options="options">
                             <splide-slide>
-                                <img src="../../public/img/card/p1.jpg" alt="">
+                                <img src="../../public/img/card/1hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p2.jpg" alt="">
+                                <img src="../../public/img/card/2hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p3.jpg" alt="">
+                                <img src="../../public/img/card/3hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p4.jpg" alt="">
+                                <img src="../../public/img/card/4hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p5.jpg" alt="">
+                                <img src="../../public/img/card/5hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p6.jpg" alt="">
+                                <img src="../../public/img/card/6hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p7.jpg" alt="">
+                                <img src="../../public/img/card/7hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p8.jpg" alt="">
+                                <img src="../../public/img/card/8hd.png" alt="">
+                            </splide-slide>
+                            <splide-slide>
+                                <img src="../../public/img/card/9hd.png" alt="">
                             </splide-slide>
                         </splide>
                     </div>
@@ -36,31 +39,33 @@
 
                 <div class="col-sm-6 mobile">
                     <div class="carrousel">
-                        <!-- <h2>Pizzas mais deliciosas da região</h2> -->
                         <splide :options="options">
                             <splide-slide>
-                                <img src="../../public/img/card/p4.jpg" alt="">
+                                <img src="../../public/img/card/6hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p5.jpg" alt="">
+                                <img src="../../public/img/card/7hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p6.jpg" alt="">
+                                <img src="../../public/img/card/8hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p7.jpg" alt="">
+                                <img src="../../public/img/card/4hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p8.jpg" alt="">
+                                <img src="../../public/img/card/5hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p1.jpg" alt="">
+                                <img src="../../public/img/card/9hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p2.jpg" alt="">
+                                <img src="../../public/img/card/2hd.png" alt="">
                             </splide-slide>
                             <splide-slide>
-                                <img src="../../public/img/card/p3.jpg" alt="">
+                                <img src="../../public/img/card/1hd.png" alt="">
+                            </splide-slide>
+                            <splide-slide>
+                                <img src="../../public/img/card/3hd.png" alt="">
                             </splide-slide>
                         </splide>
                     </div>
@@ -91,7 +96,7 @@ export default {
                     speed: 1,
                 },
                 cover: true,
-                heightRatio: 0.5,
+                heightRatio: 0.8,
                 // width : '100vw',
                 // height: '100vh',
                 // type   : 'loop',
@@ -110,7 +115,7 @@ export default {
 
 <style scoped>
 .fundo {
-    background-image: url('../../public/img/pizzahome3.png');
+    background-image: url('../../public/img/pizzahome5.png');
     /* background-position: 0 -250px; */
     background-size: cover;
     display: flex;
@@ -123,7 +128,7 @@ export default {
     padding: 10px;
     padding: 20px;
     margin-top: 50px;
-    border-radius: 20px;
+    border-radius: 40vh;
 }
 
 .carrousel {
@@ -147,13 +152,10 @@ h2 {
     font-weight: 800;
 }
 
-.splide__slide {
-    border-radius: 50px !important;
-}
-
 @media (max-width: 575px){
     .col-sm-6{
         padding: 10px !important;
     }
 }
+
 </style>

@@ -168,6 +168,12 @@ export default {
     -webkit-backdrop-filter: blur(7.9px);
     padding: 30px;
     border-radius: 15px;
+    border: 2px solid yellow;
+    transition: 0.8s;
+}
+
+.styleForm:hover{
+    border: 3px solid rgba(255, 255, 0, 0);
 }
 
 input,

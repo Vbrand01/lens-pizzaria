@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <Message :msg="msg" v-show="msg" />
-        <table class="table table-condensed">
+        <table class="table table-condensed" id="tablecondensed">
             <thead>
                 <tr>
                     <th class="order-id">ID</th>
@@ -54,7 +54,7 @@ export default {
         return {
             pizzas: null,
             pizza_id: null,
-            status: [], 
+            status: [],
             msg: null
         }
     },
@@ -62,62 +62,85 @@ export default {
         Message
     },
     methods: {
-        async getPedidos() {
-            const req = await fetch("http://localhost:3000/Pizzas");
 
-            const data = await req.json();
+    filterTable() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("inputFilter");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("tablecondensed");
+    tr = table.getElementsByTagName("tr");
 
-            this.pizzas = data;
-
-            // resgatar status
-            this.getStatus();
-        },
-        async getStatus() {
-            const req = await fetch("http://localhost:3000/status");
-
-            const data = await req.json();
-
-            this.status = data;
-
-        },
-        async deletePizza(id) {
-            const req = await fetch(`http://localhost:3000/Pizzas/${id}`, {
-                method: "DELETE"
-            });
-
-            const res = await req.json();
-
-            //msg
-            this.msg = `Pedido removido com sucesso`;
-
-            setTimeout(() => this.msg = "", 2000);
-
-            this.getPedidos();
-        },
-        async updatePizza(event, id) {
-            const option = event.target.value;
-
-            const dataJson = JSON.stringify({ status: option });
-
-            const req = await fetch(`http://localhost:3000/Pizzas/${id}`, {
-                method: "PATCH",
-                headers: { "Content-Type": "application/json" },
-                body: dataJson
-            });
-
-            const res = await req.json()
-
-            this.msg = `O pedido Nº${res.id} foi atualizado para ${res.id}!`;
-
-            setTimeout(() => this.msg = "", 2000);
-
-            console.log(res);
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+            }
         }
+    },
+
+    async getPedidos() {
+
+    const req = await fetch("http://localhost:3000/Pizzas");
+
+    const data = await req.json();
+
+    this.pizzas = data;
+
+    // resgatar status
+    this.getStatus();
+},
+        async getStatus() {
+    const req = await fetch("http://localhost:3000/status");
+
+    const data = await req.json();
+
+    this.status = data;
+
+},
+        async deletePizza(id) {
+    const req = await fetch(`http://localhost:3000/Pizzas/${id}`, {
+        method: "DELETE"
+    });
+
+    const res = await req.json();
+
+    //msg
+    this.msg = `Pedido removido com sucesso`;
+
+    setTimeout(() => this.msg = "", 2000);
+
+    this.getPedidos();
+},
+        async updatePizza(event, id) {
+    const option = event.target.value;
+
+    const dataJson = JSON.stringify({ status: option });
+
+    const req = await fetch(`http://localhost:3000/Pizzas/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: dataJson
+    });
+
+    const res = await req.json()
+
+    this.msg = `O pedido Nº${res.id} foi atualizado para ${res.id}!`;
+
+    setTimeout(() => this.msg = "", 2000);
+
+    console.log(res);
+}
 
     },
-    mounted() {
-        this.getPedidos();
-    }
+mounted() {
+    this.getPedidos();
+}
 }
 </script>
 

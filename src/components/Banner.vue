@@ -2,7 +2,7 @@
     <div id="main-banner">
         <div class="container">
             <div class="row" id="content">
-                <div class="col-sm-6" id="bloco1">
+                <div class="col-sm-6" id="coluna">
                     <div class="title-logo">
                         <h1><img src="../../public/img/logo.png" height="100px" alt="">Pizzaria Lens</h1>
                     </div>
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <img class="img3d" src="../../public/img/men.png" alt="">
+                    <img class="coluna-image" src="../../public/img/men.png" alt="">
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@ export default {
     padding: 10px;
 }
 
-#bloco1 {
+#coluna {
     color: rgb(221, 221, 221);
     text-align: center;
     background: rgba(0, 0, 0, 0.705);
@@ -67,7 +67,7 @@ export default {
     margin-bottom: 100px;
 }
 
-#bloco1 h1 {
+#coluna h1 {
     color: rgb(221, 221, 221);
     text-align: center;
     font-weight: 800;
@@ -78,17 +78,10 @@ export default {
     padding: 10px;
 }
 
-.alinhando-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img3d {
+.coluna-image {
     margin-top: 90px;
     width: 100%;
 }
-
 
 a {
     text-decoration: none;
@@ -158,7 +151,7 @@ a {
 }
 
 /* @media (max-width: 768px){
-    .img3d {
+    .coluna-image {
     margin-top: 20px;
     width: 100%;
     margin-bottom: 60px;
@@ -168,25 +161,26 @@ a {
     .container {
         width: 100% !important;
     }
-    .img3d {
-    margin-top: 90px;
-    width: 100%;
+
+    .coluna-image {
+        margin-top: 90px;
+        width: 100%;
     }
 
-    #bloco1 {
-    color: rgb(221, 221, 221);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.705);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    padding: 40px;
-    border-radius: 20px;
-    height: 100%;
-    margin-top: 180px;
-    margin-bottom: 100px;
-}
+    #coluna {
+        color: rgb(221, 221, 221);
+        text-align: center;
+        background: rgba(0, 0, 0, 0.705);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.9px);
+        -webkit-backdrop-filter: blur(5.9px);
+        padding: 40px;
+        border-radius: 20px;
+        height: 100%;
+        margin-top: 180px;
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -194,17 +188,17 @@ a {
         flex-direction: column-reverse;
     }
 
-    .img3d {
+    .coluna-image {
         margin-top: 100px;
         margin-bottom: -220px;
         width: 100%;
     }
 
-    #bloco1 {
+    #coluna {
         margin-bottom: 100px;
     }
 
-    #bloco1 h1 {
+    #coluna h1 {
         color: rgb(221, 221, 221);
         text-align: center;
         font-weight: 800;
@@ -217,18 +211,18 @@ a {
     }
 
     .btoFazerPedido {
-    position: relative;
-    margin: auto;
-    padding: 18px 70px;
-    transition: all 0.2s ease;
-    height: 75px;
-    border: none;
-    background-color: rgb(250, 6, 46);
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100% !important;
+        position: relative;
+        margin: auto;
+        padding: 18px 70px;
+        transition: all 0.2s ease;
+        height: 75px;
+        border: none;
+        background-color: rgb(250, 6, 46);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
     }
 
 

@@ -52,7 +52,8 @@
 
 
     .background-nav{
-        background-color: rgb(49, 6, 3);
+        overflow: hidden;
+        background-color: rgba(77, 8, 8, 0.945);
         height: 115px; /* defina uma altura */
         position: fixed;
         top: 0;
@@ -65,19 +66,24 @@
     }
 
     .navbar-brand{
+      float: left;
       font-weight: 800;
       letter-spacing: 1px;
       font-size: 25px;
       color: rgb(243, 207, 1);
       background-color: transparent;
-      border: solid 2px rgb(243, 207, 1);
       padding: 15px;
       border-radius: 8px;
       transition: 1s;
+      border-bottom: 3px solid transparent;
     }
 
     .navbar-brand:hover{
       background-color: rgb(250, 6, 46);
+    }
+
+    .navbar-brand:active{
+      border-bottom: 3px solid red !important;
     }
 
 
