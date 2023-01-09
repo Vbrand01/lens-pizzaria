@@ -108,6 +108,44 @@ export default {
         async createPedido(e) {
             e.preventDefault()
 
+            const saborUrl = ("http://localhost:3000/sabores");
+            const saborPromise = await saborUrl.json(()=> {
+                return new promise ((resolve, reject) => {
+                    setTimeout(() => {
+                        return resolve(saborUrl)
+                    }, time
+                    )
+                })
+            });
+
+            const sobremesaUrl = ("http://localhost:3000/sobremesas");
+            const sobremesaPromise = await sobremesaUrl.json(()=> {
+                return new promise ((resolve, reject) => {
+                    setTimeout(() => {
+                        return resolve(sobremesaUrl)
+                    }, time
+                    )
+                })
+            });
+
+            const bebidaUrl = ("http://localhost:3000/bebidas");
+            const bebidaPromise = await bebidaUrl.json(()=> {
+                return new promise ((resolve, reject) => {
+                    setTimeout(() => {
+                        return resolve(bebidaUrl)
+                    }, time
+                    )
+                })
+            });
+
+            Promise.all([
+            saborPromise(),
+            sobremesaPromise(),
+            bebidaPromise()
+            ])
+
+
+
             const data = {
                 nome: this.nome,
                 sabor: this.sabor,

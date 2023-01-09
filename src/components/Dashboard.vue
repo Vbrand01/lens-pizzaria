@@ -167,7 +167,7 @@ export default {
     border: 4px solid rgb(78, 6, 6);
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 600px;
+    margin-bottom: 100px;
     box-shadow: rgb(78, 6, 6) -18px 13px 0px 4px;
     -webkit-box-shadow: rgb(78, 6, 6) -18px 13px 0px 4px;
     -moz-box-shadow: rgb(78, 6, 6) -18px 13px 0px 4px;

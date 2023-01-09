@@ -309,61 +309,65 @@
   ],
   "Pizzas": [
     {
-      "nome": "Maria",
-      "sabor": "Muçarela",
+      "nome": "dfdsfsd",
+      "sabor": "Scamorza",
       "sobremesa": "Brownie",
-      "bebida": "Soda",
+      "bebida": "Água",
       "opcionais": [
         "Catupiry"
       ],
       "status": "Solicitado",
-      "id": 5
-    },
-    {
-      "nome": "Fulano",
-      "sabor": "Quatro queijos",
-      "sobremesa": "Flambado de frutas vermelhas",
-      "bebida": "Cerveja Brahma Zero",
-      "opcionais": [
-        "Catupiry",
-        "Calabresa"
-      ],
-      "status": "Solicitado",
-      "id": 8
-    },
-    {
-      "nome": "Giovanni",
-      "sabor": "Calabresa",
-      "sobremesa": "Flambado de frutas vermelhas",
-      "bebida": "Coca-cola",
-      "opcionais": [
-        "Catupiry"
-      ],
-      "status": "Finalizado",
-      "id": 10
+      "id": 20
     },
     {
       "nome": "sdfsdf",
       "sabor": "Muçarela",
-      "sobremesa": "Nenhuma",
-      "bebida": "Soda",
+      "sobremesa": "Chocolamour",
+      "bebida": "Água",
+      "opcionais": [
+        "Catupiry"
+      ],
+      "status": "Solicitado",
+      "id": 21
+    },
+    {
+      "nome": "dsfffffffffffffffff",
+      "sabor": "Pão de alho",
+      "sobremesa": "Chocolamour",
+      "bebida": "Água",
+      "opcionais": [
+        "Catupiry",
+        "Tomate seco",
+        "Peperoni",
+        "Cheddar",
+        "Calabresa",
+        "Provolone"
+      ],
+      "status": "Solicitado",
+      "id": 22
+    },
+    {
+      "nome": "dsadsa",
+      "sabor": "Atum",
+      "sobremesa": "Pettit Gateau",
+      "bebida": "Fanta",
+      "opcionais": [
+        "Tomate seco"
+      ],
+      "status": "Solicitado",
+      "id": 23
+    },
+    {
+      "nome": "aaaaaaaa",
+      "sabor": "Pão de alho",
+      "sobremesa": "Chocolamour",
+      "bebida": "Dolly",
       "opcionais": [
         "Catupiry",
         "Calabresa"
       ],
-      "status": "Solicitado",
-      "id": 11
-    },
-    {
-      "nome": "Eu",
-      "sabor": "Portuguesa",
-      "sobremesa": "Brownie",
-      "bebida": "Soda",
-      "opcionais": [
-        "Calabresa"
-      ],
-      "status": "Em produção",
-      "id": 16
+      "status": "Finalizado",
+      "id": 24
     }
   ]
 }
