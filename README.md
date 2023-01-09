@@ -20,8 +20,6 @@
 
 # 📁 Acesso ao projeto
 
-**Indique como é possível baixar ou acessar o código fonte do projeto, seja projeto inicial ou final**
-
 <br>
 
 # 🛠️ Instalar e rodar o projeto
