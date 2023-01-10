@@ -1,6 +1,7 @@
 {
-  "name": "burguerweb",
+  "name": "lens",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -32,3 +33,4 @@
     "schema": "db/schema.prisma"
   }
 }
+
