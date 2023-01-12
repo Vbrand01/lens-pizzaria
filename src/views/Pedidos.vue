@@ -19,6 +19,10 @@ import Reload from '@/components/Reload.vue';
     Reload
 }
 }
+
+let url = "http://localhost:3000/sabores";
+
+console.log()
 </script>
 
 <style scoped>

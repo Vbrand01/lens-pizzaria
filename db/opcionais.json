@@ -1,0 +1,28 @@
+{
+    "opcionais": [
+        {
+          "id": 1,
+          "tipo": "Catupiry"
+        },
+        {
+          "id": 2,
+          "tipo": "Calabresa"
+        },
+        {
+          "id": 3,
+          "tipo": "Cheddar"
+        },
+        {
+          "id": 4,
+          "tipo": "Tomate seco"
+        },
+        {
+          "id": 5,
+          "tipo": "Peperoni"
+        },
+        {
+          "id": 6,
+          "tipo": "Provolone"
+        }
+      ]
+}

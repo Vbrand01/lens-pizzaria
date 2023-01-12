@@ -1,0 +1,40 @@
+{
+    "sobremesas": [
+        {
+          "id": 1,
+          "tipo": "Nenhuma"
+        },
+        {
+          "id": 2,
+          "tipo": "Brownie"
+        },
+        {
+          "id": 3,
+          "tipo": "Bananas Flambadas"
+        },
+        {
+          "id": 4,
+          "tipo": "Chocolamour"
+        },
+        {
+          "id": 5,
+          "tipo": "Flambado de frutas vermelhas"
+        },
+        {
+          "id": 6,
+          "tipo": "Pettit Gateau"
+        },
+        {
+          "id": 7,
+          "tipo": "Merengue"
+        },
+        {
+          "id": 8,
+          "tipo": "Pudim de coco"
+        },
+        {
+          "id": 9,
+          "tipo": "Manjar Branco"
+        }
+      ]
+}

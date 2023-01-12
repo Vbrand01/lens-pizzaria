@@ -1,0 +1,84 @@
+{
+    "sabores": [
+        {
+          "id": 1,
+          "tipo": "Calabresa"
+        },
+        {
+          "id": 2,
+          "tipo": "Portuguesa"
+        },
+        {
+          "id": 3,
+          "tipo": "Muçarela"
+        },
+        {
+          "id": 4,
+          "tipo": "Marguerita"
+        },
+        {
+          "id": 5,
+          "tipo": "Quatro queijos"
+        },
+        {
+          "id": 6,
+          "tipo": "Frango com catupiry"
+        },
+        {
+          "id": 7,
+          "tipo": "Pão de alho"
+        },
+        {
+          "id": 8,
+          "tipo": "Alcachofra"
+        },
+        {
+          "id": 9,
+          "tipo": "Mexicana"
+        },
+        {
+          "id": 10,
+          "tipo": "Scamorza"
+        },
+        {
+          "id": 11,
+          "tipo": "Napolitana"
+        },
+        {
+          "id": 12,
+          "tipo": "Brigadeiro"
+        },
+        {
+          "id": 13,
+          "tipo": "Romeu e Julieta"
+        },
+        {
+          "id": 14,
+          "tipo": "Califórnia"
+        },
+        {
+          "id": 15,
+          "tipo": "Americana"
+        },
+        {
+          "id": 16,
+          "tipo": "Atum"
+        },
+        {
+          "id": 17,
+          "tipo": "Pepperoni"
+        },
+        {
+          "id": 18,
+          "tipo": "Abobrinha com requeijão"
+        },
+        {
+          "id": 19,
+          "tipo": "Palmito e champignon"
+        },
+        {
+          "id": 20,
+          "tipo": "Brócolis e peito de peru"
+        }
+      ]
+}

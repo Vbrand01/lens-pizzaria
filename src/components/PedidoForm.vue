@@ -19,7 +19,9 @@
                                 <label for="sabor">Escolha o sabor:</label>
                                 <select name="sabor" class="form-select" id="sabor" v-model="sabor">
                                     <option value="">Selecione o sabor que deseja</option>
-                                    <option v-for="sabor in sabores" :key="sabor.id" :value="sabor.tipo">{{ sabor.tipo }}
+                                    <option v-for="sabor in sabores" :key="sabor.id" :value="sabor.tipo">{{
+                                        sabor.tipo
+                                    }}
                                     </option>
                                 </select>
                             </div>
@@ -51,8 +53,8 @@
                                     <label for="opcional">Borda:</label>
                                     <div class="content" v-for="opcional in opcionaisdata" :key="opcional.id"
                                         value="opcional.tipo">
-                                        <input type="checkbox" class="form-check-input" name="opcionais" id="opcional" v-model="opcionais"
-                                            :value="opcional.tipo">
+                                        <input type="checkbox" class="form-check-input" name="opcionais" id="opcional"
+                                            v-model="opcionais" :value="opcional.tipo">
                                         <span>{{ opcional.tipo }}</span>
                                     </div>
                                 </div>
@@ -95,63 +97,243 @@ export default {
         }
     },
     methods: {
-        async getIngredientes() {
 
-            const req = await fetch("http://localhost:3000/ingredientes");
-            const data = await req.json();
+        // async getSabores() {
+        //     const req = await fetch("http://localhost:3000/sabores")
+        //     const data = await req.json();
 
-            this.sabores = data.sabores;
-            this.sobremesas = data.sobremesas;
-            this.bebidas = data.bebidas;
-            this.opcionaisdata = data.opcionais;
+        //     this.sabores = data.sabores;
+        //     return new promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             return resolve(req)
+        //         }, time
+        //         )
+        //     })
+        // },
+
+
+        // async getBebidas() {
+        //     const req = await fetch("http://localhost:3000/bebidas")
+        //     const data = await req.json();
+
+        //     this.bebidas = data.bebidas;
+        //     return new promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             return resolve(req)
+        //         }, time
+        //         )
+        //     })
+        // },
+
+        // async getSobremesas() {
+        //     const req = await fetch("http://localhost:3000/sobremesas");
+        //     const data = await req.json();
+
+        //     this.sobremesas = data.sobremesas;
+        //     return new promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             return resolve(req)
+        //         }, time
+        //         )
+        //     })
+        // },
+
+        // async getOpcionais() {
+
+        //     const req = await fetch("http://localhost:3000/opcionais");
+        //     const data = await req.json();
+
+        //     this.opcionais = data.opcionais;
+        //     return new promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             return resolve(req)
+        //         }, time
+        //         )
+        //     })
+        // },
+
+        // async getPedidos() {
+        //     const req = await fetch("http://localhost:3000/Pizzas")
+        //     const data = await req.json();
+
+        //     this.pizzas = data.pizzas;
+        //     return new promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             return resolve(req)
+        //         }, time
+        //         )
+        //     })
+        // },
+
+        async getSabores(){
+            const urlSabores = await fetch("http://localhost:3000/sabores")
+            .then((response) => response.json())
+            .then((data) => 
+            setTimeout(() => {
+                        return resolve(urlSabores)
+                    }, 1000
+            )
+            );
+            this.sabores = data.sabores
         },
-        async createPedido(e) {
-            e.preventDefault()
+
+        async getSobremesas(){
+            const urlSobremesas = await fetch("http://localhost:3000/sobremesas")
+            .then((response) => response.json())
+            .then((data) => 
+            setTimeout(() => {
+                        return resolve(urlSobremesas)
+                    }, 1000
+            )
+            );
+            this.sobremesas = data.sobremesas
+        },
+
+        async getBebidas(){
+            const urlBebidas = await fetch("http://localhost:3000/bebidas")
+            .then((response) => response.json())
+            .then((data) => 
+            setTimeout(() => {
+                        return resolve(urlBebidas)
+                    }, 1000
+            )
+            );
+            this.bebidas = data.bebidas
+        },
+
+        async getOpcionais(){
+            const urlOpcionais = await fetch("http://localhost:3000/opcionais")
+            .then((response) => response.json())
+            .then((data) => 
+            setTimeout(() => {
+                        return resolve(urlOpcionais)
+                    }, 1000
+            )
+            );
+            this.opcionais = data.opcionais
+        },
+
+        async getStatus(){
+            const urlStatus = await fetch("http://localhost:3000/status")
+            .then((response) => response.json())
+            .then((data) => 
+            setTimeout(() => {
+                        return resolve(urlStatus)
+                    }, 1000
+            )
+            );
+            this.status = data.status
+        },
+
+        // async createPedido(getSabores, getSobremesas, getBebidas, getOpcionais, getStatus) {
+
+            // let p1 = new Promise((resolve, reject) => {
+            //     this.sabores = dataSabor.sabores;
+            //     return new promise((resolve, reject) => {
+            //         setTimeout(() => {
+            //             return resolve(urlSabores)
+            //         }, time
+            //         )
+            //     })
+            // });
+
+            // let p2 = new Promise((resolve, reject) => {
+            //     this.sobremesas = dataSobremesa.sobremesas;
+            //     return new promise((resolve, reject) => {
+            //         setTimeout(() => {
+            //             return resolve(urlSobremesas)
+            //         }, time
+            //         )
+            //     })
+            // });
+
+            // let p3 = new Promise((resolve, reject) => {
+            //     this.opcionais = dataOpcionais.opcionais;
+            //     return new promise((resolve, reject) => {
+            //         setTimeout(() => {
+            //             return resolve(urlOpcionais)
+            //         }, time
+            //         )
+            //     })
+            // });
+
+            // let p4 = new Promise((resolve, reject) => {
+            //     this.bebidas = dataBebidas.bebidas;
+            //         setTimeout(() => {
+            //             return resolve(urlBebidas)
+            //         }, time
+            //         )
+            // });
+
+            // let p5 = new Promise((resolve, reject) => {
+            //     this.status = dataStatus.status;
+            //     return new promise((resolve, reject) => {
+            //         setTimeout(() => {
+            //             return resolve(urlStatus)
+            //         }, time
+            //         )
+            //     })
+            // });
+
+            // let p6 = new Promise((resolve, reject) => {
+            //     this.pizzas = dataPizzas.status;
+            //     return new promise((resolve, reject) => {
+            //         setTimeout(() => {
+            //             return resolve(urlPizzas)
+            //         }, time
+            //         )
+            //     })
+            // });
+            
+        async getUpdate(){
+
+            Promise.all(getSabores(1), getSobremesas(2), getBebidas(3), getOpcionais(4), getStatus(5)).then((result) => {
+
+                e.preventDefault()
 
 
-            const data = {
-                nome: this.nome,
-                sabor: this.sabor,
-                sobremesa: this.sobremesa,
-                bebida: this.bebida,
-                opcionais: Array.from(this.opcionais),
-                status: "Solicitado"
+                const data = {
+                    nome: this.nome,
+                    sabor: this.sabor,
+                    sobremesa: this.sobremesa,
+                    bebida: this.bebida,
+                    opcionais: Array.from(this.opcionais),
+                    status: "Solicitado"
+                }
+
+                const dataJson = JSON.stringify(data);
+
+                const req = fetch("http://localhost:3000/Pizzas", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: dataJson
+                });
+
+                // colocar uma msg de sistema
+                this.msg = `Pedido Nº ${res.id} realizado com sucesso`;
+
+                setTimeout(() => this.msg = "", 2000);
+
+                // limpar os campos
+                this.nome = "";
+                this.sabor = "";
+                this.sobremesa = "";
+                this.bebida = "";
+                this.opcionais = [];
+
+
             }
+            )
+        }                
+ },    
 
-            const dataJson = JSON.stringify(data);
+mounted() {
+    this.getIngredientes()
+},
 
-            const req = await fetch("http://localhost:3000/Pizzas", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: dataJson
-            });
-
-            const res = await req.json();
-
-            // colocar uma msg de sistema
-            this.msg = `Pedido Nº ${res.id} realizado com sucesso`;
-
-            setTimeout(() => this.msg = "", 2000);
-
-            // limpar os campos
-            this.nome = "";
-            this.sabor = "";
-            this.sobremesa = "";
-            this.bebida = "";
-            this.opcionais = [];
-
-
-        },
-        
-    },
-
-    mounted() {
-        this.getIngredientes()
-    },
-
-    components: {
-        Message
-    }
+components: {
+    Message
+}
 
 }
 </script>
@@ -169,13 +351,13 @@ export default {
     padding: 40px;
     border-radius: 20px;
     transition: 0.8s;
-    -webkit-box-shadow: 2px 6px 22px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 6px 22px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 6px 22px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 6px 22px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 2px 6px 22px 1px rgba(247, 3, 3, 0.75);
 
 }
 
-.styleForm:hover{
+.styleForm:hover {
     border: 3px solid rgba(255, 255, 0, 0.973);
 }
 

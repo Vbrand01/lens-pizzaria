@@ -1,0 +1,16 @@
+{
+    "status": [
+        {
+          "id": 1,
+          "tipo": "Solicitado"
+        },
+        {
+          "id": 2,
+          "tipo": "Em produção"
+        },
+        {
+          "id": 3,
+          "tipo": "Finalizado"
+        }
+      ]
+}
